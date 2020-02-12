@@ -1,0 +1,91 @@
+.row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+h1{
+	margin-top:50px;
+	color: silver;
+	font-weight:300;
+	text-align:center;
+}
+
+/* vertical spacing between columns */
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}
+.content {
+  height: 100%;
+  padding: 20px 20px 10px;
+  background-color:#202020;
+}
+
+html,body{
+background-color:black;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+}
+
+.card{	margin:5px;
+	height:500px;
+	width:200px;
+}
+.card-title{
+	color: white;
+}
+.card-body{
+	background-color:#202020;
+	color:white;
+}
+ .btn-primary{
+	background-color:black;
+	vertical-align:bottom;
+}
+iframe{video::-webkit-media-controls {
+    display:none !important;
+}
+
+#videosList {
+ max-width: 600px; 
+  overflow: hidden;
+}
+.video {
+  height: 300px;
+  width: 200px;
+  margin-bottom: 50px;
+  	background-color:#202020;
+  
+  
+}
+video#bgvid {
+    position: absolute;
+    z-index: 0;
+    background: url(mel.jpg) no-repeat;
+    background-size: 100% 100%;
+    top: 0px;
+    left: 0px; /* fixed to left. Replace it by right if you want.*/
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+video{
+	  height: 300px;
+  width: 200px;
+  margin-bottom: 50px;
+	background-color:#202020;
+	display:block;
+
+}
+.card-image{
+	  	background-color:#202020;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
+}
